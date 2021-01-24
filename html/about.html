@@ -55,7 +55,7 @@
     .content-1 {
       display: flex;
       width: 50%;
-      margin: auto 300px;
+      margin: auto;
       text-align: center;
       justify-content: center;
 
@@ -93,9 +93,20 @@
     .container {
       max-width: 1024px;
       margin: auto;
-      padding-left: 15px;
-      padding-right: 15px;
       display: block;
+    }
+    @media (max-width: 700px){
+      .container{
+        max-width: 600px;
+        margin: auto!important;
+        
+      }
+      .ts-col-3{
+        width: auto;
+        margin: auto;
+        position: relative;
+        float: right;
+      }
     }
 
     .ts-col-3 {
@@ -230,8 +241,14 @@
       justify-content: space-around;
       padding-bottom: 80px;
       max-width: 1200px;
-      min-width: 1200px;
-      margin: 0 auto;
+      margin: auto;
+    }
+    @media (max-width:760px){
+      ._2RZDN{
+        border: 2px solid;
+        margin: auto;
+        flex-direction: column;
+      }
     }
 
     ._2tnu- .heading2 {
@@ -300,25 +317,16 @@
 
 
   <div class="banner">
-    <h1> Delicious delite</h1>
-    <hr style="width: 40%;">
-    <p style="width: 50%; margin: auto; text-align: center;color:rgb(177, 245, 110)">Loremit necessitatibus nam
-      voluptas autem. Minima perferendis sint enim. Quo ad, blanditiis doloribus autem mollitia omnis deserunt
-      voluptatem ratione.</p>
-    <div class="mt-4">
-      <button type="button" class="btn btn-outline-danger mr-4">Get Menu</button>
-      <button type="button" class="btn btn-outline-danger">Reservation</button>
-
+    <h1 style="margin: auto; padding-top: 30px;"> About Us</h1>
+   
     </div>
 
   </div>
 </div>
 
   </section>
-  <div class="heading">
-    <p class="h2">ABOUT US</p>
-  </div>
-  <div class="content-1">
+
+  <div class="content-1 mt-5">
     <p>
       <strong> We might not change the world but the way we make it might.</strong> <br>
       We respect your choice and yearn for food and we make it our duty to provide you with best quality meal prepared by the best chefs.
